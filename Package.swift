@@ -5,14 +5,46 @@ let package = Package(
     name: "skip-bridge",
     platforms: [.iOS(.v16), .macOS(.v13)],
     products: [
-        .library(name: "SkipBridge", targets: ["SkipBridge"]),
-        .library(name: "SkipBridgeKt", targets: ["SkipBridgeKt"]),
-        .library(name: "SkipBridgeToKotlinSamples", type: .dynamic, targets: ["SkipBridgeToKotlinSamples"]),
-        .library(name: "SkipBridgeToKotlinSamplesHelpers", targets: ["SkipBridgeToKotlinSamplesHelpers"]),
-        .library(name: "SkipBridgeToKotlinCompatSamples", type: .dynamic, targets: ["SkipBridgeToKotlinCompatSamples"]),
-        .library(name: "SkipBridgeToSwiftSamples", type: .dynamic, targets: ["SkipBridgeToSwiftSamples"]),
-        .library(name: "SkipBridgeToSwiftSamplesHelpers", targets: ["SkipBridgeToSwiftSamplesHelpers"]),
-        .library(name: "SkipBridgeToSwiftSamplesTestsSupport", type: .dynamic, targets: ["SkipBridgeToSwiftSamplesTestsSupport"]),
+        .library(
+            name: "SkipBridge",
+            type: .dynamic,
+            targets: ["SkipBridge"]
+        ),
+        .library(
+            name: "SkipBridgeKt",
+            type: .dynamic,
+            targets: ["SkipBridgeKt"]
+        ),
+        .library(
+            name: "SkipBridgeToKotlinSamples",
+            type: .dynamic,
+            targets: ["SkipBridgeToKotlinSamples"]
+        ),
+        .library(
+            name: "SkipBridgeToKotlinSamplesHelpers",
+            type: .dynamic,
+            targets: ["SkipBridgeToKotlinSamplesHelpers"]
+        ),
+        .library(
+            name: "SkipBridgeToKotlinCompatSamples",
+            type: .dynamic,
+            targets: ["SkipBridgeToKotlinCompatSamples"]
+        ),
+        .library(
+            name: "SkipBridgeToSwiftSamples",
+            type: .dynamic,
+            targets: ["SkipBridgeToSwiftSamples"]
+        ),
+        .library(
+            name: "SkipBridgeToSwiftSamplesHelpers",
+            type: .dynamic,
+            targets: ["SkipBridgeToSwiftSamplesHelpers"]
+        ),
+        .library(
+            name: "SkipBridgeToSwiftSamplesTestsSupport",
+            type: .dynamic,
+            targets: ["SkipBridgeToSwiftSamplesTestsSupport"]
+        ),
     ],
     dependencies: [
         .package(url: "https://source.skip.tools/skip.git", from: "1.2.22"),
